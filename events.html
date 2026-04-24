@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;600;700;800&amp;family=Be+Vietnam+Pro:wght@100;300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      
+    </script>
+
+
+    <style>
+        .menu-item {
+    transition: opacity 0.4s ease-in-out;
+}
+    </style>
+</head>
+<body class="font-body-md selection:bg-secondary-container min-h-screen pb-12">
+
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-[1440px] z-[100] bg-white shadow-xl rounded-2xl border border-stone-100">
+    <div class="flex justify-between items-center px-8 py-2">
+        <div class="h-12 w-12 flex items-center">
+            <img alt="HAJJAJ Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uj4wkvovVd-q9JeY02peTqoJ93R6tLGnJOr_upzd8b0xzShru9W0pV3D4Pp68pYS33otwE0FAeD74jmHevykoN4wMAm7Vf_Kvwaw7C4VCCos5qaMJvOMjzRcceS9pA6wkJwQbX6-UWJTyMMBMbIuqo2DGZLv5HU4aiI9z4oY29b47HBGNO6Vr_CdAyP6FuXOX4_K5hVte2HaDxucbxzOZckqY3fyd7-ntB0jrEDHWf17VaK4bQ6aTs8KbdKvLei_nh-zw0Nwptv1iA"/>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8 font-['Epilogue'] tracking-wide uppercase text-xs">
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="index.html">Home</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="menu.html">Menu</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="about.html">About Us</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="gallery.html">Gallery</a>
+            <a class="text-[#501E3C] dark:text-[#A67C92] font-semibold border-b border-[#501E3C] pb-1" href="events.html">Events</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button class="material-symbols-outlined text-[#501E3C] text-xl">search</button>
+            <button id="menu-toggle" class="md:hidden material-symbols-outlined text-[#501E3C] text-2xl">menu</button>
+            <button class="hidden md:block material-symbols-outlined text-[#501E3C] text-xl">account_circle</button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden flex-col bg-white rounded-b-2xl border-t border-stone-50 p-6 gap-4 font-['Epilogue'] tracking-wide uppercase text-xs">
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="index.html">Home</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="menu.html">Menu</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="about.html">About Us</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="gallery.html">Gallery</a>
+        <a class="text-[#501E3C] dark:text-[#A67C92] font-bold pb-1 text-bolder" href="events.html">Events</a>
+    </div>
+</nav>
+
+
+
+
+
+<main class="max-w-[1440px] mx-auto px-8 pt-[120px] space-y-8">
+
+
+
+
+<!-- Hero Section Split Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<section class="content-card p-12 lg:p-16 flex flex-col justify-center reveal-item-left">
+<div class="space-y-8">
+<h1 style="font-size: 3rem; font-weight: bolder;" class="font-headline-xl text-on-surface leading-tight">
+                    Live The Moments That Matter The Most!
+                </h1>
+                <p class="font-body-lg text-on-surface-variant max-w-xl">
+                    Our Weekly And Monthly Events Are For Everyone, wether You Are Into Music, Sport, Art Or Even Stay-in Activities , Hagag Cafe Got You Covered.                 
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+
+</div>
+</div>
+</section>
+<section class="content-card overflow-hidden reveal-item-right">
+<div class="h-full w-full relative group">
+<img alt="Candid high-angle shot of friends laughing at a minimalist marble table in a brightly lit cafe with soft afternoon sun" class="w-full h-full object-cover min-h-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVV-gNArjJkhxlph7U5Fsht6GxA4gL4I2iQpLINQBztWrNKDMkjKlXYaL63aq2W0g0bUV-lyyHFREffGHx_e-xtuhyrD_VyeSi8ntiOE0PsKZn9bLcNRcSXkwFTplHtSJfi_TjFyQ_Jf3WlnEZzfXrxaV2oKw1o28k4SLsnZJattYDNcCITSqewsM5fj64y1lDY-F_2V08y7p6fLD3ndoVdM-9o0ZGs2sSsNLx667eVn9JZK3i10S7GP4fFwJ3iRNYRvlg42tS2obi"/>
+
+</div>
+</section>
+</div>
+
+
+
+
+
+<section class="content-card overflow-hidden reveal-item-bottom">
+    <div class="grid grid-cols-1 lg:grid-cols-12">
+        
+        <div class="lg:col-span-7 h-[300px] lg:h-auto relative">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVV-gNArjJkhxlph7U5Fsht6GxA4gL4I2iQpLINQBztWrNKDMkjKlXYaL63aq2W0g0bUV-lyyHFREffGHx_e-xtuhyrD_VyeSi8ntiOE0PsKZn9bLcNRcSXkwFTplHtSJfi_TjFyQ_Jf3WlnEZzfXrxaV2oKw1o28k4SLsnZJattYDNcCITSqewsM5fj64y1lDY-F_2V08y7p6fLD3ndoVdM-9o0ZGs2sSsNLx667eVn9JZK3i10S7GP4fFwJ3iRNYRvlg42tS2obi" 
+                 alt="Next Featured Event at Hajjaj" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute top-6 left-6 bg-[#fca287] text-[#370826] px-4 py-2 rounded-full font-bold text-[10px] uppercase tracking-widest shadow-lg">
+                Next Event
+            </div>
+        </div>
+
+        <div class="lg:col-span-5 p-10 lg:p-16 flex flex-col justify-center space-y-6 bg-white">
+            <div class="space-y-2">
+                <div class="flex items-center gap-3 text-[#fca287] font-semibold text-xs uppercase tracking-widest">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <span>Friday, May 15th</span>
+                </div>
+                <h2 class="font-headline-lg text-primary uppercase leading-tight">Acoustic Soul <br>Night</h2>
+            </div>
+
+            <p class="font-body-md text-stone-500 leading-relaxed">
+                Join us for an intimate evening featuring local independent artists. Unplugged performances, hand-crafted brews, and the best community vibe in the city.
+            </p>
+
+            <div class="space-y-4 border-y border-stone-100 py-6">
+                <div class="flex items-center gap-4 text-sm text-stone-600">
+                    <i class="fa-solid fa-clock text-[#370826]"></i>
+                    <span>Starts at 08:00 PM</span>
+                </div>
+                <div class="flex items-center gap-4 text-sm text-stone-600">
+                    <i class="fa-solid fa-ticket text-[#370826]"></i>
+                    <span>Entry: 150 EGP (Includes Signature Drink)</span>
+                </div>
+            </div>
+
+            <div class="pt-2">
+                <a href="https://wa.me/YOUR_NUMBER" 
+                   class="inline-flex items-center justify-center gap-3 bg-[#370826] text-white w-full lg:w-auto px-10 py-5 rounded-full font-label-md uppercase text-xs transition-all hover:bg-black hover:scale-[1.02]">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    Book Your Table
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="content-card p-12 lg:p-20 reveal-item-top">
+    <div class="text-center mb-16">
+        <span class="font-label-md text-secondary uppercase tracking-[0.3em] mb-4 block">The Weekly Rhythm</span>
+        <h2 class="font-headline-lg text-on-surface uppercase mb-4">What's On At Hagag</h2>
+        <p class="font-body-md text-stone-500 max-w-2xl mx-auto">Our schedule is designed to match your mood. Whether you're looking for a quiet workspace or a vibrant community mixer, there's a rhythm for everyone.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="group p-8 rounded-[2rem] border border-stone-100 bg-stone-50 transition-all duration-500 hover:bg-[#fca287]/10 hover:border-[#fca287] hover:-translate-y-2">
+            <div class="flex justify-between items-start mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-stone-400">Mon - Wed</span>
+                <i class="fa-solid fa-laptop-code text-primary text-xl"></i>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary mb-4">Deep Work Sessions</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">Fast Wi-Fi, bottomless refills, and a quiet atmosphere curated for the local creative & tech community.</p>
+        </div>
+
+        <div class="group p-8 rounded-[2rem] border border-stone-100 bg-stone-50 transition-all duration-500 hover:bg-[#fca287]/10 hover:border-[#fca287] hover:-translate-y-2">
+            <div class="flex justify-between items-start mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-stone-400">Thursday</span>
+                <i class="fa-solid fa-guitar text-primary text-xl"></i>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary mb-4">Unplugged Hours</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">Live acoustic sets starting at 8 PM. Discover local talent while enjoying our signature evening brews.</p>
+        </div>
+
+        <div class="group p-8 rounded-[2rem] border border-stone-100 bg-stone-50 transition-all duration-500 hover:bg-[#fca287]/10 hover:border-[#fca287] hover:-translate-y-2">
+            <div class="flex justify-between items-start mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-stone-400">Friday</span>
+                <i class="fa-solid fa-comments text-primary text-xl"></i>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary mb-4">Community Mixer</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">The ultimate weekend kickoff. Networking, board games, and specialized tasting flights for the curious.</p>
+        </div>
+
+        <div class="group p-8 rounded-[2rem] border border-stone-100 bg-stone-50 transition-all duration-500 hover:bg-[#fca287]/10 hover:border-[#fca287] hover:-translate-y-2">
+            <div class="flex justify-between items-start mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-stone-400">Saturday</span>
+                <i class="fa-solid fa-palette text-primary text-xl"></i>
+            </div>
+            <h3 class="font-headline-md text-xl text-primary mb-4">Creative Pop-ups</h3>
+            <p class="text-sm text-stone-500 leading-relaxed">Bi-weekly art workshops or local brand pop-ups. Check our Instagram for this week's special guest.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="content-card overflow-hidden reveal-item-right text-white" style="background-color: #fca287;">
+    <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+        
+        <div class="p-12 lg:p-20 space-y-8">
+            <div>
+                <span class="font-label-md text-[#370826] uppercase tracking-[0.3em] mb-4 block">Private Hire</span>
+                <h2 class="font-headline-lg uppercase leading-tight" style="color:#ffffff;">Your Event, <br>Our Atmosphere.</h2>
+                <div class="w-16 h-1 bg-[#370826] mt-6"></div>
+            </div>
+
+            <p class="font-body-lg text-black leading-relaxed">
+                Looking for a unique venue for your next workshop, brand launch, or private celebration? Hagag Cafe offers a modular space designed to inspire. From professional networking to intimate gatherings, we provide the aesthetic, the tech, and—of course—the perfect coffee.
+            </p>
+
+            <ul class="space-y-4 font-body-md text-sm" style="color:#ffffff;">
+                <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-check fa-2x text-[#370826]" style="font-weight: bold;"></i>
+                    Full Audiovisual Support (Projector & Sound)
+                </li>
+                <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-check fa-2x text-[#370826]" style="font-weight: bold;"></i>
+                    Customized Catering & Beverage Menus
+                </li>
+                <li class="flex items-center gap-3">
+                    <i class="fa-solid fa-check fa-2x text-[#370826]" style="font-weight: bold;"></i>
+                    Flexible Seating Arrangements (Up to 40 Guests)
+                </li>
+            </ul>
+
+            <div class="pt-4">
+                <a href="https://wa.me/YOUR_NUMBER?text=I'm%20interested%20in%20booking%20a%20private%20event" 
+                   class="inline-flex items-center gap-3 bg-[#370826] text-[#ffffff] px-10 py-5 rounded-full font-label-md uppercase text-xs font-bold transition-transform hover:scale-105">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    Inquire About Booking
+                </a>
+            </div>
+        </div>
+
+        <div class="h-full min-h-[400px] lg:min-h-full relative overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1jzQsLpipmV8Ccb6yG4RRQKZJEY44iGobqckt5IllMvl03k2XsmKlnLR9seYGaI1XodpheJO3fdT_nG7V0I_iAkPXcAYjW8sTo2N-VlpdBgco9pi5hzVFOisCUuBTpTXyTGNitaC2k7RGQSWPNtsPH7AQtg5J5NFXQORm36YTusckK3b_QTPvLQCaNfdewCQc-ObEWckiWBWz6XWnOFC25urbr_CwgDG0b-OfDs7vNLQxzMrH1_vbmbBPzJ9Eu2fpD1FLLQtq8zH0" 
+                 alt="Private event setup at Hagag Cafe" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-60 hover:scale-110 transition-transform duration-[5000ms]">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-[#fca287] to-transparent lg:block hidden"></div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hero Section Split Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+<section class="content-card overflow-hidden reveal-item-right">
+<div class="h-full w-full relative group">
+<img alt="Candid high-angle shot of friends laughing at a minimalist marble table in a brightly lit cafe with soft afternoon sun" class="w-full h-full object-cover min-h-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVV-gNArjJkhxlph7U5Fsht6GxA4gL4I2iQpLINQBztWrNKDMkjKlXYaL63aq2W0g0bUV-lyyHFREffGHx_e-xtuhyrD_VyeSi8ntiOE0PsKZn9bLcNRcSXkwFTplHtSJfi_TjFyQ_Jf3WlnEZzfXrxaV2oKw1o28k4SLsnZJattYDNcCITSqewsM5fj64y1lDY-F_2V08y7p6fLD3ndoVdM-9o0ZGs2sSsNLx667eVn9JZK3i10S7GP4fFwJ3iRNYRvlg42tS2obi"/>
+</div>
+</section>
+
+
+<section  style="background-color: #fca287;" class="content-card p-12 lg:p-16 flex flex-col justify-center reveal-item-left">
+<div class="space-y-8">
+
+<span class="font-label-md text-secondary-container uppercase tracking-widest " style="color:#370826; font-weight: bold; font-size: 2rem;">A Place To Live In And Make Memories!</span>
+<h2 class="font-headline-lg">CHECK OUR Events</h2>
+<p class="font-body-lg">Our Cafe Holds Weekly And Monthly Events Where We Plan The Moments That Matter, And You Get To Enjoy The Vibe With No Stress At All, Wether You Are A Fan Of Music, Sport, Art Or Even Stay-in Activities, Hagag Cafe Will definitely Be Your Fav Spot.</p>
+<div><a href="events.html" style="background-color:#370826!important;" class="mt-5 px-10 py-5 rounded-full text-white font-label-md uppercase  text-xs">Check Our Events</a></div>
+<!-- <a href="events.html" style="background-color:#370826!important;" class="mt-5 px-10 py-5 rounded-full text-white font-label-md uppercase  text-xs">Check Our Events</a> -->
+</div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Testimonials Section Card -->
+<section class="content-card p-12 lg:p-20 reveal-item-bottom">
+<div class="text-center mb-16">
+<span class="font-label-md text-secondary uppercase tracking-widest mb-4 block">Testimonials</span>
+<h2 class="font-headline-lg text-on-surface uppercase mb-4">GET FEELINGS</h2>
+<div class="w-16 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"The only place in the Egypt where I can truly hear my own thoughts. The atmosphere is as carefully crafted as the coffee."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a young woman" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl8VBR_k6vSt0lNp04ac0m4x9vLVcY4h8gf_sHexQ7vuCTcAcIYI20Anz2QSWpoce96hnanWyEOvzBg8Tl5ZlFcnr3pRZZET0GAq_843H9o44_oi3VMhA8XdTUs7HNl3r05POOBDprD-6Unn2HsYlHpYBCdoX1-KBYoK8v3o25BCC6j8I2T325QAp7hbjsLZONmg8_Y0ci6fP6F0RsoOtQJM6OmyyBPPKQyTnhJrTh7y_-OLGEMKz1FrbZdvVNekj8ho_CFvLdgTy5"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Eleanor Vance</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Artist</p>
+</div>
+</div>
+</div>
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"Incredible attention to detail. From the Decor to the acoustic warmth, it's a sensory masterclass."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a man" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWwBPpNK8TuGgyIe36mmIeICXSbBtOeCI26qPbY6GtNQFe6RUf2eIPDhglwDLmTyzXHzc2GJ_9av3J4T3HnWELaCsIluBBvi6bRpxDcqRQl_mbeY62UHiM0daaIWxA87_maKz9vh4fieIYhfag6DRA2Fbexlywc0iJtlTtA_T03mBz2Pb7CXfXg7hQvOFYoRsdoHE84aIAtaFQ6QtSeft7PAAABUzdhbZfIyneW0mYGgeYGoz2xCOGWynPnDcRBJ2BiDsS0Q6TLB84"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Marcus Holloway</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Architect</p>
+</div>
+</div>
+</div>
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"Hagag isn't just my local cafe; it's my community. They remember my order and my name. That matters."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a woman" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHzGJGxQ_FKImgqJbpvpZDtAxD9xCyqfiGx-L78Z6ysWE8nezjDuwdqKgkpXS05Unpoz9fGPRTAY5_O_QaDssguC0_zwSZg1l75dyB7enpnlNR6iN2sc2b4qKI9uu_QGJIrinPAoBp0Nzjl6busM7TvCoMky0uaD4Jyt25Yt67B18PYkvD2hwqTbUk6a2fZJt1hAD-FSVxwNBz4Hz55BhU1jvcwDz9020HaY5zAYr8_Fmjnx-RUAWyqSy-fyjSwrDcoF7_ky_guuI"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Sarah Jenkins</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Writer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="content-card overflow-hidden reveal-item-left">
+    <div class="grid grid-cols-1 md:grid-cols-12">
+        
+        <div class="md:col-span-5 p-12 lg:p-16 flex flex-col justify-center space-y-8 bg-white">
+            <div>
+                <span class="font-label-md text-secondary uppercase tracking-widest mb-4 block">Visit Us</span>
+                <h2 class="font-headline-lg text-primary uppercase">Find Our Spot</h2>
+                <div class="w-12 h-1 bg-[#fca287] mt-2"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Location</h4>
+                        <p class="text-sm text-on-surface-variant">Al-haram, Giza<br>Cairo, Egypt</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-clock mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Opening Hours</h4>
+                        <p class="text-sm text-on-surface-variant">Sat - Thu : 11:00 AM - 11:00 PM<br>Friday: 02:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-phone mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Get in Touch</h4>
+                        <p class="text-sm text-on-surface-variant">+20 1XX XXX XXXX<br><br>Follow US On Insta :<br>@hagagscafe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="https://maps.app.goo.gl/oN5rKAuUATRTzXdHA" target="_blank" class="inline-flex items-center gap-2 bg-[#370826] text-white px-8 py-4 rounded-full font-label-md uppercase text-xs transition-transform hover:scale-105">
+                    <i class="fa-solid fa-route"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="md:col-span-7 h-[400px] md:h-auto min-h-[400px] relative">
+            <iframe class="absolute inset-0 w-full h-full grayscale-[0.2] contrast-[1.1]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.071446991626!2d31.193188499999998!3d30.0061048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584729bea5f99f%3A0x68ed12774ddf47b0!2sHagag&#39;s%20cafe!5e0!3m2!1sen!2seg!4v1777035292216!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+<!-- Footer Card -->
+<footer class="max-w-[1440px] mx-auto px-6 mt-8">
+<div class="content-card px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-['Epilogue'] text-[10px] tracking-widest uppercase text-stone-400">© 2024 Hagag CAFE. ALL RIGHTS RESERVED.</div>
+<div class="flex gap-8 font-['Epilogue'] text-[10px] tracking-widest uppercase text-[#501E3C]">
+<a class="hover:text-black transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-black transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-black transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex gap-6">
+<a href="https://www.instagram.com/hagagscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
+<i class="fa-solid fa-share-nodes fa-2x"></i>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="scripts.js"></script>
+<script>
+    
+
+
+
+    const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    
+    // Optional: Change icon to 'close' when menu is open
+    menuToggle.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+
+
+
+
+
+const tabBtns = document.querySelectorAll('.menu-tab-btn');
+const menuItems = document.querySelectorAll('.menu-item');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // 1. Update Button Styles
+        tabBtns.forEach(b => b.classList.remove('text-white', 'font-semibold', 'border-b-2', 'border-white'));
+        tabBtns.forEach(b => b.classList.add('text-stone-400'));
+        
+        btn.classList.remove('text-stone-400');
+        btn.classList.add('text-white', 'font-semibold', 'border-b-2', 'border-white');
+
+        // 2. Filter Logic
+        const target = btn.getAttribute('data-target');
+
+        menuItems.forEach(item => {
+            if (target === 'all' || item.getAttribute('data-category') === target) {
+                item.style.display = 'block';
+                // Add a little fade-in effect
+                item.style.opacity = '0';
+                setTimeout(() => { item.style.opacity = '1'; }, 10);
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+</body></html>

@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;600;700;800&amp;family=Be+Vietnam+Pro:wght@100;300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      
+    </script>
+
+
+
+</head>
+<body class="font-body-md selection:bg-secondary-container min-h-screen pb-12">
+
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-[1440px] z-[100] bg-white shadow-xl rounded-2xl border border-stone-100">
+    <div class="flex justify-between items-center px-8 py-2">
+        <div class="h-12 w-12 flex items-center">
+            <img alt="HAJJAJ Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uj4wkvovVd-q9JeY02peTqoJ93R6tLGnJOr_upzd8b0xzShru9W0pV3D4Pp68pYS33otwE0FAeD74jmHevykoN4wMAm7Vf_Kvwaw7C4VCCos5qaMJvOMjzRcceS9pA6wkJwQbX6-UWJTyMMBMbIuqo2DGZLv5HU4aiI9z4oY29b47HBGNO6Vr_CdAyP6FuXOX4_K5hVte2HaDxucbxzOZckqY3fyd7-ntB0jrEDHWf17VaK4bQ6aTs8KbdKvLei_nh-zw0Nwptv1iA"/>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8 font-['Epilogue'] tracking-wide uppercase text-xs">
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="index.html">Home</a>
+            <a class="text-[#501E3C] dark:text-[#A67C92] font-semibold border-b border-[#501E3C] pb-1" href="menu.html">Menu</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="about.html">About Us</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="gallery.html">Gallery</a>
+            <a class="text-stone-500 dark:text-stone-400 hover:text-[#501E3C] transition-colors" href="events.html">Events</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button class="material-symbols-outlined text-[#501E3C] text-xl">search</button>
+            <button id="menu-toggle" class="md:hidden material-symbols-outlined text-[#501E3C] text-2xl">menu</button>
+            <button class="hidden md:block material-symbols-outlined text-[#501E3C] text-xl">account_circle</button>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden flex-col bg-white rounded-b-2xl border-t border-stone-50 p-6 gap-4 font-['Epilogue'] tracking-wide uppercase text-xs">
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="index.html">Home</a>
+        <a class="text-[#501E3C] dark:text-[#A67C92] font-bold pb-1 text-bolder" href="menu.html">Menu</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="about.html">About Us</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="gallery.html">Gallery</a>
+        <a class="py-2 border-b border-stone-50 text-[#501E3C]" href="events.html">Events</a>
+    </div>
+</nav>
+
+
+
+
+
+<main class="max-w-[1440px] mx-auto px-8 pt-[120px] space-y-8">
+
+
+
+
+
+<!-- ========================================================================= menu ================================================================== -->
+
+<section style="padding-top: 3em;" class="content-card p-12 lg:p-20  ">
+
+
+
+
+<!-- ========================================================================= menu ================================================================== -->
+<nav style="background-color: rgb(55 8 38);" 
+     class="shadow-xl rounded-2xl border border-stone-100 sticky top-[100px] z-[90] mx-[-10px] md:mx-0">
+    <div class="flex items-center px-4 md:px-8 py-4 overflow-x-auto no-scrollbar">
+        <div class="flex flex-nowrap items-center gap-6 md:gap-8 font-['Epilogue'] tracking-wide uppercase text-[10px] md:text-xs whitespace-nowrap">
+            <button class="menu-tab-btn active-tab text-white font-semibold border-b-2 border-white pb-1" data-target="all">All</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="coffee-world">Coffee World</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="tea-and-frappuccino">Tea & Frappuccino</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="fresh-and-smoothies">Fresh & Smoothies</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="mojito-and-cocktails">Mojito & Cocktails</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="milkshakes-and-icecream">Milkshakes & Icecream</button>
+            <button class="menu-tab-btn text-stone-400 hover:text-white transition-colors" data-target="extras-and-cold">Extras & Cold</button>
+        </div>
+    </div>
+</nav>
+<!-- ========================================================================= menu nav ================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-wrap gap-x-12 gap-y-10 mt-12 justify-start">
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Coffee World ==================== -->
+<div class="w-full category-title" data-category="coffee-world">
+    <h2 class="text-headline-md font-headline-md text-primary">Coffee World</h2>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src1" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Turkish Coffee</h3>
+            <span class="text-secondary font-semibold">$50.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Authentic fine-ground coffee beans simmered traditionally for a rich, thick finish.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src2" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Double Turkish Coffee</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">For when one isn't enough; a bold, double-strength serving of our traditional brew.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src3" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">French Coffee</h3>
+            <span class="text-secondary font-semibold">$75.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A smooth, aromatic blend lightened with a touch of creamy milk.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src4" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Espresso</h3>
+            <span class="text-secondary font-semibold">$55.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A pure, concentrated shot of our signature roast with a perfect crema.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src5" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Double Espresso</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Two intense shots of espresso for a powerful caffeine kick.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src6" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Cortado</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Equal parts espresso and warm, silky steamed milk to cut the acidity.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src7" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Flat White</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A double shot of espresso topped with a thin layer of velvety micro-foam.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src8" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Latte</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Classic espresso balanced with plenty of steamed milk and a light foam cap.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src9" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Spanish Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A creamy, sweetened latte with a signature condensed milk base.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src10" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Matcha Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">High-quality ceremonial matcha whisked with smooth steamed milk.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src11" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Pistachio Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Espresso and steamed milk infused with rich, nutty pistachio notes.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src12" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Dirty Matcha Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The best of both worlds: earthy matcha tea combined with a bold shot of espresso.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src13" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Caramel Nut Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A cozy blend of buttery caramel and toasted nut flavors.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src14" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Macchiato</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A bold shot of espresso "stained" with a dollop of frothy milk foam.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src15" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Cappuccino</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Balanced espresso, steamed milk, and a thick, luxurious layer of foam.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src16" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Mocha</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A rich fusion of deep chocolate, espresso, and velvety milk.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src17" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Americano</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Espresso shots topped with hot water for a classic, clean coffee taste.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src18" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Caramel Nut Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Our sweet caramel and nut blend served chilled over ice.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src19" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Matcha Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Refreshing whisked matcha and cold milk served over ice cubes.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src20" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Dirty Matcha Latte</h3>
+            <span class="text-secondary font-semibold">$120.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The signature matcha-espresso fusion, served cold for a refreshing boost.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src21" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Latte</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Simple, smooth espresso and chilled milk poured over ice.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src22" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Spanish Latte</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Our popular sweetened Spanish recipe served ice-cold.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="coffee-world">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src23" src="https://foodal.com/wp-content/uploads/2015/02/Coffee-Flavors-Around-the-World.jpg">
+    </div>
+    <div class="flex-1 min-w-0 border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Iced Mocha</h3>
+            <span class="text-secondary font-semibold">$00.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A decadent iced chocolate and coffee blend for a refreshing treat.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Tea & Frappuccino ==================== -->
+<div class="w-full category-title" data-category="tea-and-frappuccino">
+    <h2 class="text-headline-md font-headline-md text-primary">Tea & Frappuccino</h2>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src24" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Tea</h3>
+            <span class="text-secondary font-semibold">$30.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A classic, comforting brew of premium black tea leaves.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src25" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Green Tea</h3>
+            <span class="text-secondary font-semibold">$35.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A light and refreshing infusion rich in antioxidants.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src26" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Yansoon</h3>
+            <span class="text-secondary font-semibold">$30.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A soothing, traditional herbal anise drink with natural sweetness.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src27" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Hot Chocolate</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Velvety, rich cocoa blended with steamed milk for the ultimate comfort.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src28" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Hot Cider</h3>
+            <span class="text-secondary font-semibold">$60.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Warm, spiced apple cider—the perfect seasonal pick-me-up.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src29" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice Tea</h3>
+            <span class="text-secondary font-semibold">$50.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Chilled black tea served over ice for a crisp, clean finish.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src30" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Flavoured Ice Tea</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Our signature iced tea infused with your choice of vibrant fruit botanicals.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src31" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Classic / Caramel</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An icy, blended treat available in traditional coffee or sweet buttery caramel.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src32" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Chocolate / Pistachio</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A thick, indulgent frappuccino featuring rich cocoa or premium pistachio nuttiness.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="tea-and-frappuccino">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src33" src="https://www.foodbeast.com/wp-content/uploads/2014/06/matchamuffin.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Vanilla</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A smooth and creamy Madagascar-style vanilla bean blend.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Fresh & Smoothies ==================== -->
+<div class="w-full category-title" data-category="fresh-and-smoothies">
+    <h2 class="text-headline-md font-headline-md text-primary">Fresh & Smoothies</h2>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src34" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Lemon / Mint</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A zesty and cooling classic, freshly squeezed and blended with garden-fresh mint.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src35" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Orange</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Pure, sun-ripened oranges pressed daily for a vibrant burst of Vitamin C.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src36" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Mango</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Thick and velvety nectar made from the finest seasonal mangoes.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src37" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Mango with Milk</h3>
+            <span class="text-secondary font-semibold">$85.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A creamy twist on our fresh mango juice for a smoother, richer texture.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src38" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Strawberry</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Sweet and tangy fresh strawberries blended into a refreshing summer favorite.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src39" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Strawberry with Milk</h3>
+            <span class="text-secondary font-semibold">$85.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Fresh strawberries meeting cold milk for a classic, delicate treat.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src40" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Banana with Milk</h3>
+            <span class="text-secondary font-semibold">$85.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A naturally sweet and energizing blend of ripe bananas and chilled milk.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src41" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Lemon Mint</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The ultimate frozen refresher, blended to a perfect icy slush consistency</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src42" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Passion Fruit</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An exotic, tropical escape with a bold and tangy flavor profile.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src43" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Kiwi</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A bright, tart, and nutrient-packed frozen blend of fresh kiwi.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src44" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Peach</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Soft, summery stone fruit notes blended into a silky frozen delight.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src45" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Watermelon</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Cool, hydrating, and perfectly sweet—summer in a glass.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src46" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Mango</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An icy, blended version of our premium mango for a frosty tropical treat.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src47" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Strawberry</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Sweet frozen strawberries blended for a thick and satisfying chill.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src48" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Mix Berry</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A powerful antioxidant blend of forest berries with a deep, complex sweetness.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src49" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Pina Colada</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A creamy non-alcoholic fusion of pineapple and coconut for island vibes.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src50" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Blue Colada</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A vibrant, blue-hued twist on the classic coconut and pineapple blend.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="fresh-and-smoothies">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src51" src="https://www.thelittleepicurean.com/wp-content/uploads/2017/01/5-fruit-and-veggie-smoothies-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Blue Myth</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Our signature mysterious blue blend—cool, refreshing, and uniquely flavored.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Mojito & Cocktails ==================== -->
+<div class="w-full category-title" data-category="mojito-and-cocktails">
+    <h2 class="text-headline-md font-headline-md text-primary">Mojito & Cocktails</h2>
+</div>
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src52" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Classic</h3>
+            <span class="text-secondary font-semibold">$70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The original refresher: muddled lime and fresh mint leaves with a crisp soda finish.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src53" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Blueberry</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A deep, berry-infused twist on the classic mojito with a perfect balance of sweet and tart.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src54" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Peach</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Sun-soaked peach flavors combined with cool mint for a soft, summery glow.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src55" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Kiwi</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A bright and tropical mojito featuring the bold, tangy essence of fresh kiwi.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src56" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Blue Sky</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A vibrant, azure-hued mojito with a unique, refreshing citrus profile.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src57" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Strawberry</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A fan favorite—sweet garden strawberries muddled with lime and fresh mint.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src58" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Passion Fruit</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An exotic and aromatic mojito with a sharp, tropical passion fruit kick.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src59" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Pina Colada</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A smooth, creamy non-alcoholic classic blending rich coconut with sweet pineapple.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src60" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Blue Colada</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A visually stunning, blue-tinted version of the traditional coconut-pineapple fusion.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src61" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Banana Jungle</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A wild, tropical blend of ripe bananas and creamy exotic flavors.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src62" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Sweet Pink</h3>
+            <span class="text-secondary font-semibold">$90.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A delicate, blush-colored cocktail with a sophisticated floral and fruity sweetness.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="mojito-and-cocktails">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src63" src="https://www.troprockin.com/wp-content/uploads/2022/06/mojito-recipe-with-simple-syrup-1.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Dark Banana</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A rich and mysterious twist on banana flavors with a deeper, more intense finish.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Milkshakes & Icecream ==================== -->
+<div class="w-full category-title" data-category="milkshakes-and-icecream">
+    <h2 class="text-headline-md font-headline-md text-primary">Milkshakes & Icecream</h2>
+</div>
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src64" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Chocolate / Oreo / Vanilla</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Our core trio of classics: choose between rich cocoa, crunchy crushed cookies, or smooth Madagascar bean.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src65" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Caramel / Blueberry / Strawberry</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Fruity and sweet favorites blended with premium ice cream for a thick, velvety texture.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src66" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Peach / Mango</h3>
+            <span class="text-secondary font-semibold">$100.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A sun-drenched, creamy escape featuring the soft notes of summer stone fruits and tropical mango.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src67" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Snickers</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An indulgent blend of chocolate, peanut, and caramel inspired by the world-famous candy bar.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src68" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Espresso Caramel</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The perfect pick-me-up: a bold shot of espresso swirled with buttery caramel and cold cream.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src69" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Espresso Vanilla</h3>
+            <span class="text-secondary font-semibold">$110.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A sophisticated "affogato-style" shake combining intense coffee with smooth, aromatic vanilla.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src70" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice Cream (S / M / L) Vanilla</h3>
+            <span class="text-secondary font-semibold">$30.00 / $50.00 / $70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Timeless, creamy vanilla bean perfection—simple, elegant, and refreshing.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src71" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice Cream (S / M / L) Chocolate</h3>
+            <span class="text-secondary font-semibold">$30.00 / $50.00 / $70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Deep, decadent chocolate scoops for the ultimate cocoa enthusiast.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src72" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice Cream (S / M / L) Strawberry</h3>
+            <span class="text-secondary font-semibold">$30.00 / $50.00 / $70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Bright and fruity scoops made with real strawberry essence.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="milkshakes-and-icecream">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src73" src="https://www.unicornsinthekitchen.com/wp-content/uploads/2021/09/Cookies-and-cream-Ice-Cream-1.1200px.jpg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice Cream (S / M / L) Mango</h3>
+            <span class="text-secondary font-semibold">$30.00 / $50.00 / $70.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A frosty, tropical delight that tastes like a freshly picked mango in every bite.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ==================== Extras & Cold ==================== -->
+<div class="w-full category-title" data-category="extras-and-cold">
+    <h2 class="text-headline-md font-headline-md text-primary">Extras & Cold</h2>
+</div>
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src74" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Water</h3>
+            <span class="text-secondary font-semibold">$20.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Pure, bottled mineral water for crisp and clean hydration.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src75" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Soft Drinks</h3>
+            <span class="text-secondary font-semibold">$40.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A refreshing selection of your favorite chilled carbonated beverages.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src76" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Red Bull</h3>
+            <span class="text-secondary font-semibold">$80.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">The classic energy boost to revitalize your body and mind.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src77" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Milk</h3>
+            <span class="text-secondary font-semibold">$20.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An extra serving of fresh, creamy milk to customize your drink.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src78" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Espresso Shot</h3>
+            <span class="text-secondary font-semibold">$50.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A bold, additional shot of our signature espresso for an extra kick.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src79" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Flavour</h3>
+            <span class="text-secondary font-semibold">$30.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">Personalize your beverage with a pump of our premium artisanal syrups.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src80" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Honey</h3>
+            <span class="text-secondary font-semibold">$20.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">A natural, golden touch of sweetness for your tea or coffee.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+<div class="menu-item flex flex-nowrap items-start gap-6 md:w-[calc(50%-24px)]" data-category="extras-and-cold">
+    <!-- item -->
+    <div class="flex-shrink-0 w-32 h-32 rounded-2xl overflow-hidden bg-surface-container">
+        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="iced latte with distinct layers of milk and espresso in a tall glass with ice cubes and condensation menu-img" data-item="src81" src="https://www.forksandfingers.co.uk/wp-content/uploads/2020/07/soft.jpeg">
+    </div>
+    <div class="flex-1 min-w-0  border-b border-outline-variant/30 pb-4">
+        <div class="flex justify-between items-baseline mb-2">
+            <h3 class="text-headline-md text-lg font-bold text-primary">Ice</h3>
+            <span class="text-secondary font-semibold">$10.00</span>
+        </div>
+            <p class="text-on-surface-variant text-sm mb-4">An extra serving of ice to keep your drink perfectly chilled.</p>
+            <span class="inline-block px-3 py-1 bg-secondary-container/20 text-secondary text-[10px] uppercase tracking-tighter font-bold rounded-full">Local Favorite</span>
+    </div>
+</div>
+
+
+</div>
+<!-- ==================== extras-and-cold category =============================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<!-- ========================================================================= menu ================================================================== -->
+
+
+
+
+
+<!-- Menu Section Card -->
+<section class="content-card p-12 lg:p-20 ">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="font-label-md text-secondary uppercase tracking-widest mb-4 block">Original From Hagag</span>
+<h2 class="font-headline-lg text-on-surface">Items Where You Find Only Here</h2>
+</div>
+<a class="font-label-md text-primary border-b border-primary pb-1 hover:opacity-70 text-xs" href="menu.html">VIEW FULL MENU</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group text-center">
+<div class="w-full aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border-8 border-stone-50 shadow-sm transition-transform group-hover:scale-105 duration-500">
+<img alt="Professional studio shot of a cold brew coffee in a tall glass with condensation and clear ice cubes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPwCPDIwXG-cOwQrhpQhdK-HyqxTkwaC4z11Hpt81JxNnrsjhOfV94rFjYAnJCfCG3A3noYF0lsuzjm0hQfpVVvUihEK9IkA4Z4aTrGeEtot3Hjjpi3OrwqdcHZsDfYTAKW3JbupvmipFG26tMnzA06NRJJQZx5xWIZ_lBQNSKB28xjXeFEpTvalgspJ1jmgOh-CKe_VYO1QXUgtv7S75nMi4HxU2_UTtl9oEYVoKEuycO9nPb_tphEzGTe284Wslg7Fp-ZEEdBMO9"/>
+</div>
+<h3 class="font-headline-md text-lg mb-2">Blue Meth</h3>
+<p class="font-label-md text-secondary mb-4">$120.00</p>
+</div>
+<div class="group text-center">
+<div class="w-full aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border-8 border-stone-50 shadow-sm transition-transform group-hover:scale-105 duration-500">
+<img alt="Two freshly baked croissants on a white plate with delicate golden flakes of pastry" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfxsbhhUW0jUR1e0liU6ZFjFuupEXKyqvhaseW-gGP1B6W9qFKT3FEyF3SclDhOCK6Fe4Xl2YFeHJu_UH1s_VM6UnT2e_2QxanXHkgSHpAVDmMbQRpiwibmrJSvhEY3JRMfgsT6AlrVLtOFHZQvTiQoldHV4Jt2TACJBWIjQd-vGsOZeMGmn0OiNlN2U0_Ei8c7nj3NLAoxWGriJQjGKu7QMC_0oyCFPjeayP0yZAcrpxGY_WieBhm_MHp3gmrw0VhvHU8D27g4Ti-"/>
+</div>
+<h3 class="font-headline-md text-lg mb-2">Mini Hot Choclate</h3>
+<p class="font-label-md text-secondary mb-4">$35.00</p>
+</div>
+<div class="group text-center">
+<div class="w-full aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border-8 border-stone-50 shadow-sm transition-transform group-hover:scale-105 duration-500">
+<img alt="Hot dark chocolate in a stone mug topped with a single toasted marshmallow" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVJdqZSQpj_pT5gsc7qfq1yx9UScuZ2YfJ_hOyWtHN4Iv6fFfAcNqaijVjWNvu4hHOKoDDO3ipG3TECSNeuzKVUK0qWSp0VkFI6K6FzioOsQwaJZ-wr7RY719e16_c9exP5NCTpPKAsdd3qMSWB1mCn_UievFR7iefL6OLNnSudjLJVlOGLO3M3TQmaSNEr9fATFWzcMqX-ia9kWkfGVZ0J4J43ufp0Zei_wOjCUT1TZU6fFhD_xrQ6bUE7Sen20DZ7hDursDsx4gC"/>
+</div>
+<h3 class="font-headline-md text-lg mb-2">Gamar</h3>
+<p class="font-label-md text-secondary mb-4">$130.00</p>
+</div>
+<div class="group text-center">
+<div class="w-full aspect-square rounded-full overflow-hidden mb-6 bg-surface-container-low border-8 border-stone-50 shadow-sm transition-transform group-hover:scale-105 duration-500">
+<img alt="Japanese matcha latte in a glass showing vibrant green layers and frothy milk" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhqruaID1actarX1Vs-BPgcxi1NGQqUr1C0QoW6Jj5DuJTYWoma6NfuvxM-duQHPwjxuVeG1qxxT-3ZpSC4MY4xd7t5X0WnxldZl6OUQb9i7K9XvZ6gNsCZTDzkPom4_AYxd2JlyIR9Rsp-YhJ6O5fh97cvUwp1Mv59RaTNQHO9Ame5aXxvm2Fqxu4QnqhnbKV5ayeShuPz3RVWCfO_0cqNJP2F2M2FcQOtrsHTE9Kwq9fjRdPuacVbvZ8S1Y4JJFoB-fx9v4K8fgL"/>
+</div>
+<h3 class="font-headline-md text-lg mb-2">Sweet Pink</h3>
+<p class="font-label-md text-secondary mb-4">$90.00</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Hero Section Split Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+<section class="content-card overflow-hidden ">
+<div class="h-full w-full relative group">
+<img alt="Candid high-angle shot of friends laughing at a minimalist marble table in a brightly lit cafe with soft afternoon sun" class="w-full h-full object-cover min-h-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVV-gNArjJkhxlph7U5Fsht6GxA4gL4I2iQpLINQBztWrNKDMkjKlXYaL63aq2W0g0bUV-lyyHFREffGHx_e-xtuhyrD_VyeSi8ntiOE0PsKZn9bLcNRcSXkwFTplHtSJfi_TjFyQ_Jf3WlnEZzfXrxaV2oKw1o28k4SLsnZJattYDNcCITSqewsM5fj64y1lDY-F_2V08y7p6fLD3ndoVdM-9o0ZGs2sSsNLx667eVn9JZK3i10S7GP4fFwJ3iRNYRvlg42tS2obi"/>
+</div>
+</section>
+
+
+<section  style="background-color: #fca287;" class="content-card p-12 lg:p-16 flex flex-col justify-center ">
+<div class="space-y-8">
+
+<span class="font-label-md text-secondary-container uppercase tracking-widest " style="color:#370826; font-weight: bold; font-size: 2rem;">A Place To Live In And Make Memories!</span>
+<h2 class="font-headline-lg">CHECK OUR Events</h2>
+<p class="font-body-lg">Our Cafe Holds Weekly And Monthly Events Where We Plan The Moments That Matter, And You Get To Enjoy The Vibe With No Stress At All, Wether You Are A Fan Of Music, Sport, Art Or Even Stay-in Activities, Hagag Cafe Will definitely Be Your Fav Spot.</p>
+<div><a href="events.html" style="background-color:#370826!important;" class="mt-5 px-10 py-5 rounded-full text-white font-label-md uppercase  text-xs">Check Our Events</a></div>
+<!-- <a href="events.html" style="background-color:#370826!important;" class="mt-5 px-10 py-5 rounded-full text-white font-label-md uppercase  text-xs">Check Our Events</a> -->
+</div>
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Testimonials Section Card -->
+<section class="content-card p-12 lg:p-20 ">
+<div class="text-center mb-16">
+<span class="font-label-md text-secondary uppercase tracking-widest mb-4 block">Testimonials</span>
+<h2 class="font-headline-lg text-on-surface uppercase mb-4">GET FEELINGS</h2>
+<div class="w-16 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"The only place in the Egypt where I can truly hear my own thoughts. The atmosphere is as carefully crafted as the coffee."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a young woman" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl8VBR_k6vSt0lNp04ac0m4x9vLVcY4h8gf_sHexQ7vuCTcAcIYI20Anz2QSWpoce96hnanWyEOvzBg8Tl5ZlFcnr3pRZZET0GAq_843H9o44_oi3VMhA8XdTUs7HNl3r05POOBDprD-6Unn2HsYlHpYBCdoX1-KBYoK8v3o25BCC6j8I2T325QAp7hbjsLZONmg8_Y0ci6fP6F0RsoOtQJM6OmyyBPPKQyTnhJrTh7y_-OLGEMKz1FrbZdvVNekj8ho_CFvLdgTy5"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Eleanor Vance</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Artist</p>
+</div>
+</div>
+</div>
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"Incredible attention to detail. From the Decor to the acoustic warmth, it's a sensory masterclass."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a man" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWwBPpNK8TuGgyIe36mmIeICXSbBtOeCI26qPbY6GtNQFe6RUf2eIPDhglwDLmTyzXHzc2GJ_9av3J4T3HnWELaCsIluBBvi6bRpxDcqRQl_mbeY62UHiM0daaIWxA87_maKz9vh4fieIYhfag6DRA2Fbexlywc0iJtlTtA_T03mBz2Pb7CXfXg7hQvOFYoRsdoHE84aIAtaFQ6QtSeft7PAAABUzdhbZfIyneW0mYGgeYGoz2xCOGWynPnDcRBJ2BiDsS0Q6TLB84"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Marcus Holloway</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Architect</p>
+</div>
+</div>
+</div>
+<div class="bg-stone-50 p-8 rounded-2xl flex flex-col justify-between border border-stone-100">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<p class="font-body-lg text-on-surface mb-8 italic text-base leading-relaxed">"Hagag isn't just my local cafe; it's my community. They remember my order and my name. That matters."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden">
+<img alt="Portrait of a woman" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHzGJGxQ_FKImgqJbpvpZDtAxD9xCyqfiGx-L78Z6ysWE8nezjDuwdqKgkpXS05Unpoz9fGPRTAY5_O_QaDssguC0_zwSZg1l75dyB7enpnlNR6iN2sc2b4qKI9uu_QGJIrinPAoBp0Nzjl6busM7TvCoMky0uaD4Jyt25Yt67B18PYkvD2hwqTbUk6a2fZJt1hAD-FSVxwNBz4Hz55BhU1jvcwDz9020HaY5zAYr8_Fmjnx-RUAWyqSy-fyjSwrDcoF7_ky_guuI"/>
+</div>
+<div>
+<p class="font-label-md text-sm">Sarah Jenkins</p>
+<p class="text-[10px] text-stone-400 uppercase tracking-widest">Writer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="content-card overflow-hidden ">
+    <div class="grid grid-cols-1 md:grid-cols-12">
+        
+        <div class="md:col-span-5 p-12 lg:p-16 flex flex-col justify-center space-y-8 bg-white">
+            <div>
+                <span class="font-label-md text-secondary uppercase tracking-widest mb-4 block">Visit Us</span>
+                <h2 class="font-headline-lg text-primary uppercase">Find Our Spot</h2>
+                <div class="w-12 h-1 bg-[#fca287] mt-2"></div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Location</h4>
+                        <p class="text-sm text-on-surface-variant">Al-haram, Giza<br>Cairo, Egypt</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-clock mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Opening Hours</h4>
+                        <p class="text-sm text-on-surface-variant">Sat - Thu : 11:00 AM - 11:00 PM<br>Friday: 02:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <i class="fa-solid fa-phone mt-1 text-secondary"></i>
+                    <div>
+                        <h4 class="font-bold text-primary">Get in Touch</h4>
+                        <p class="text-sm text-on-surface-variant">+20 1XX XXX XXXX<br><br>Follow US On Insta :<br>@hagagscafe</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="https://maps.app.goo.gl/oN5rKAuUATRTzXdHA" target="_blank" class="inline-flex items-center gap-2 bg-[#370826] text-white px-8 py-4 rounded-full font-label-md uppercase text-xs transition-transform hover:scale-105">
+                    <i class="fa-solid fa-route"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="md:col-span-7 h-[400px] md:h-auto min-h-[400px] relative">
+            <iframe class="absolute inset-0 w-full h-full grayscale-[0.2] contrast-[1.1]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.071446991626!2d31.193188499999998!3d30.0061048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584729bea5f99f%3A0x68ed12774ddf47b0!2sHagag&#39;s%20cafe!5e0!3m2!1sen!2seg!4v1777035292216!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+
+    </div>
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Card -->
+<footer class="max-w-[1440px] mx-auto px-6 mt-8">
+<div class="content-card px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-['Epilogue'] text-[10px] tracking-widest uppercase text-stone-400">© 2024 Hagag CAFE. ALL RIGHTS RESERVED.</div>
+<div class="flex gap-8 font-['Epilogue'] text-[10px] tracking-widest uppercase text-[#501E3C]">
+<a class="hover:text-black transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-black transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-black transition-colors" href="#">Contact Us</a>
+</div>
+<div class="flex gap-6">
+<a href="https://www.instagram.com/hagagscafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-2x fa-instagram"></i></a>
+<i class="fa-solid fa-share-nodes fa-2x"></i>
+</div>
+</div>
+</footer>
+
+
+
+<script src="scripts.js"></script>
+<script>
+    
+
+
+
+    const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+    
+    // Optional: Change icon to 'close' when menu is open
+    menuToggle.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+
+
+
+
+
+const tabBtns = document.querySelectorAll('.menu-tab-btn');
+const menuItems = document.querySelectorAll('.menu-item');
+
+tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // 1. Update Button Styles
+        tabBtns.forEach(b => b.classList.remove('text-white', 'font-semibold', 'border-b-2', 'border-white'));
+        tabBtns.forEach(b => b.classList.add('text-stone-400'));
+        
+        btn.classList.remove('text-stone-400');
+        btn.classList.add('text-white', 'font-semibold', 'border-b-2', 'border-white');
+
+        // 2. Filter Logic
+        const target = btn.getAttribute('data-target');
+
+       
+
+
+menuItems.forEach(item => {
+    if (target === 'all' || item.getAttribute('data-category') === target) {
+        item.classList.remove('hidden');
+    } else {
+        item.classList.add('hidden');
+    }
+});
+
+
+const categoryTitles = document.querySelectorAll('.category-title');
+categoryTitles.forEach(title => {
+    if (target === 'all' || title.getAttribute('data-category') === target) {
+        title.classList.remove('hidden');
+    } else {
+        title.classList.add('hidden');
+    }
+});
+
+
+    });
+});
+</script>
+</body></html>
